@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Sound Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="background-color: rgb(239, 178, 217)">
+    <center>
+      <div id="header">
+        <h1>Sound Controlled Aliens</h1>
+        <br />
+        <h4>
+          Note: Play different sounds like clap, radar, and dog barks to make
+          the aliens dance.
+        </h4>
+      </div>
+      <br />
+      <div>
+        <button onclick="start()" class="btn btn-danger">S T A R T</button>
+        <br />
+        <br />
+        <label style="font-size: 20px"
+          >I can Hear - <span id="sound_name" style="font-size: 20px"></span
+        ></label>
+        <br />
+        <label style="font-size: 20px"
+          >Accuracy - <span id="accuracy_label" style="font-size: 20px"></span
+        ></label>
+        <br />
+        <br />
+        <br />
+        <img
+          src="aliens-01.png"
+          alt="alien1"
+          width="400"
+          height="300"
+          id="a1"
+        />
+        <img
+          src="aliens-02.png"
+          alt="alien2"
+          width="400"
+          height="300"
+          id="a2"
+        />
+        <img
+          src="aliens-03.png"
+          alt="alien3"
+          width="400"
+          height="300"
+          id="a3"
+        />
+        <img
+          src="aliens-04.png"
+          alt="alien4"
+          width="400"
+          height="300"
+          id="a4"
+        />
+      </div>
+      <br />
+      <br />
+      <div id="footer">
+        <h3>Developed By - Abhinav T</h3>
+      </div>
+    </center>
+    <script src="main.js"></script>
+  </body>
+</html>
